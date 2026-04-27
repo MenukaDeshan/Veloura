@@ -1,0 +1,76 @@
+.section {
+  display: flex;
+  height: 75vh;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.banner:hover .image {
+  transform: scale(1.05);
+}
+
+.content {
+  position: relative;
+  z-index: 5;
+  color: white;
+  max-width: 400px;
+}
+
+.content h2 {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .banner {
+    height: 60vh;
+    padding: 40px 20px;
+  }
+  
+  .content h2 {
+    font-size: 28px;
+  }
+}

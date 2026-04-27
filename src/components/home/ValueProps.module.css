@@ -1,0 +1,45 @@
+.section {
+  width: 100%;
+  padding: 80px 40px;
+  background: #ffffff;
+  border-top: 1px solid #f0f0f0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.icon {
+  color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.item h3 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .item h3 {
+    font-size: 16px;
+  }
+}

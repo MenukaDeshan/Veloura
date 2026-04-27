@@ -1,0 +1,151 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+}
+
+.announcement {
+  background: white;
+  color: #1a1a1a;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.announcement strong {
+  font-weight: 700;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.left a {
+  color: #1a1a1a;
+  transition: opacity 0.3s ease;
+}
+
+.left a:hover {
+  opacity: 0.6;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.navLinks {
+  display: flex;
+  gap: 32px;
+}
+
+.navLinks a {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.navLinks a:hover {
+  opacity: 0.6;
+}
+
+.saleLink {
+  color: #e60000 !important; /* Premium red for Sale */
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.right button, .right a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.right button:hover, .right a:hover {
+  opacity: 0.6;
+}
+
+.cartBtn {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .left {
+    display: none; /* Hide socials on mobile for space */
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 32px;
+  }
+}
